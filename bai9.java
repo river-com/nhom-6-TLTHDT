@@ -18,8 +18,6 @@ public class Bai9_Ds {
         for (int i = 0; i < list.size(); i++) {
             System.out.printf("Phần tử %d = %d\n", i + 1, list.get(i));
         }
-
-        // Thêm ví dụ: in phần tử lớn nhất, nhỏ nhất (nếu cần)
         if (!list.isEmpty()) {
             int max = list.get(0), min = list.get(0);
             for (int v : list) {
@@ -41,3 +39,4 @@ public class Bai9_Ds {
         return sc.nextInt();
     }
 }
+
