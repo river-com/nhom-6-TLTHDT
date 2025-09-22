@@ -3,13 +3,20 @@ import java.util.Map;
 
 public class Bai8 {
     public static void main(String[] args) {
+
         int[] arr = {1, 2, 2, 3, 1, 4, 2, 5, 1, 1};
 
+        int[] arr = {1, 2, 2, 3, 1, 4, 2, 5, 1, 1}; // Mảng mẫu
+
+        // Dùng HashMap để đếm số lần xuất hiện
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int num : arr) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
+
+
+        // Tìm phần tử có số lần xuất hiện nhiều nhất
         int maxCount = 0;
         int mostFrequent = arr[0];
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
@@ -22,4 +29,7 @@ public class Bai8 {
         System.out.println("Phần tử xuất hiện nhiều nhất: " + mostFrequent);
         System.out.println("Số lần xuất hiện: " + maxCount);
     }
+
+}
+
 }
