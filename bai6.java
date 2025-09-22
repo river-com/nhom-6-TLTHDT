@@ -13,7 +13,7 @@ public class Bai6_GcdLcm {
         if (a == 0 || b == 0) {
             lcm = 0; // theo convention: lcm với 0 đặt là 0
         } else {
-            lcm = Math.abs((a / gcd) * b); 
+            lcm = Math.abs((a / gcd) * b); // tránh overflow hơn bằng cách chia trước
         }
 
         System.out.printf("UCLN (%d, %d) = %d\n", a, b, gcd);
@@ -39,4 +39,3 @@ public class Bai6_GcdLcm {
         return sc.nextLong();
     }
 }
-
